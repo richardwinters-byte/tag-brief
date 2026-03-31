@@ -8,180 +8,121 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="TAG BRIEF">
 <meta name="theme-color" content="#0C0E12" id="tc">
-<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAPz0lEQVR4nO2de3BU1R3Hv7sbIQkESKIQAgYIEQgy5SnUFqsSBhTUaJI6gjgGcEqGGaFTGNSRdrTidHQaGZnOFJ1SoVBUfLQxDyUgJCLhFRGRVwpJCAUJBbJ5sEiy2d3+IRs2yWbvufee+zr395lxRnbPPffknE9+Ofd3zz3XARPQ">
 <title>TAG BRIEF</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-::-webkit-scrollbar{display:none}
-body{font-family:-apple-system,system-ui,sans-serif;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s}
-@keyframes scroll{to{transform:translateX(-50%)}}
-body{background:#0C0E12;color:#E8EAF0}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}::-webkit-scrollbar{display:none}
+body{font-family:-apple-system,system-ui,sans-serif;-webkit-font-smoothing:antialiased;transition:background .3s,color .3s;background:#0C0E12;color:#E8EAF0}
 body.L{background:#F4F5F7;color:#111827}
+@keyframes scroll{to{transform:translateX(-50%)}}@keyframes spin{to{transform:rotate(360deg)}}
 .w{max-width:480px;margin:0 auto;min-height:100vh;padding-bottom:72px}
-.hd{position:sticky;top:0;z-index:10;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid #1E2233;padding:10px 16px;padding-top:max(env(safe-area-inset-top,10px),10px);display:flex;align-items:center;justify-content:space-between;background:rgba(12,14,18,.9)}
-body.L .hd{background:rgba(244,245,247,.9);border-color:#E5E7EB}
-h1{font-size:20px;font-weight:800;letter-spacing:-.03em}
-h1 span{color:#5B9BF0}
-body.L h1 span{color:#2563EB}
-.dt{font-size:11px;color:#5A6275;margin-top:1px}
-body.L .dt{color:#9CA3AF}
-.tb{background:none;border:1px solid #1E2233;border-radius:8px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;font-size:15px;cursor:pointer}
-body.L .tb{border-color:#E5E7EB}
-.tk{overflow:hidden;border-bottom:1px solid #1E2233;padding:8px 0;background:#141720}
-body.L .tk{background:#FFF;border-color:#E5E7EB}
+.hd{position:sticky;top:0;z-index:10;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid #1E2233;padding:10px 16px;padding-top:max(env(safe-area-inset-top,10px),10px);display:flex;align-items:center;justify-content:space-between;background:rgba(12,14,18,.9)}body.L .hd{background:rgba(244,245,247,.9);border-color:#E5E7EB}
+h1{font-size:20px;font-weight:800;letter-spacing:-.03em}h1 span{color:#5B9BF0}body.L h1 span{color:#2563EB}
+.dt{font-size:11px;color:#5A6275;margin-top:1px}body.L .dt{color:#9CA3AF}
+.tb{background:none;border:1px solid #1E2233;border-radius:8px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;font-size:15px;cursor:pointer}body.L .tb{border-color:#E5E7EB}
+.tk{overflow:hidden;border-bottom:1px solid #1E2233;padding:8px 0;background:#141720}body.L .tk{background:#FFF;border-color:#E5E7EB}
 .tki{display:flex;gap:24px;animation:scroll 55s linear infinite;white-space:nowrap;width:max-content}
-.tki b{font-size:11px;font-weight:700;margin:0 2px}
-.tki i{font-size:11px;font-style:normal;color:#9CA3B4;margin-right:4px}
-body.L .tki i{color:#6B7280}
-.tki em{font-style:normal;font-size:11px;font-weight:600}
-.up{color:#4ADE80}.dn{color:#F87171}
-body.L .up{color:#16A34A}body.L .dn{color:#DC2626}
-.tg{font-size:9px;padding:1px 4px;border-radius:3px;background:#1E2233;color:#5A6275;font-weight:700;margin-right:4px}
-body.L .tg{background:#E5E7EB;color:#9CA3AF}
+.tki b{font-size:11px;font-weight:700;margin:0 2px}.tki i{font-size:11px;font-style:normal;color:#9CA3B4;margin-right:4px}body.L .tki i{color:#6B7280}
+.tki em{font-style:normal;font-size:11px;font-weight:600}.up{color:#4ADE80}.dn{color:#F87171}body.L .up{color:#16A34A}body.L .dn{color:#DC2626}
+.tg{font-size:9px;padding:1px 4px;border-radius:3px;background:#1E2233;color:#5A6275;font-weight:700;margin-right:4px}body.L .tg{background:#E5E7EB;color:#9CA3AF}
+.ptr{text-align:center;color:#5B9BF0;font-size:12px;font-weight:600;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:6px;height:0;transition:height .2s}body.L .ptr{color:#2563EB}.sp{display:inline-block;animation:spin .8s linear infinite}
 .p{padding:12px}
-.ex{border:1px solid #2A4060;border-radius:12px;padding:14px 16px;margin-bottom:12px;background:#141720}
-body.L .ex{background:#FFF;border-color:#BFDBFE}
-.ex h2{font-size:12px;font-weight:700;color:#5B9BF0;letter-spacing:.05em;text-transform:uppercase;margin-bottom:8px}
-body.L .ex h2{color:#2563EB}
-.ex p{font-size:13px;line-height:1.6;color:#9CA3B4}
-body.L .ex p{color:#4B5563}
-.st{display:flex;gap:8px;margin-bottom:12px;overflow-x:auto}
-.si{flex:0 0 auto;padding:10px 14px;border-radius:10px;border:1px solid #1E2233;font-size:11px;font-weight:600;white-space:nowrap;background:#141720}
-body.L .si{background:#FFF;border-color:#E5E7EB}
-details{border:1px solid #1E2233;border-radius:12px;margin-bottom:10px;overflow:hidden;background:#141720;scroll-margin-top:105px}
-body.L details{background:#FFF;border-color:#E5E7EB}
-summary{padding:14px 16px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;font-size:15px;font-weight:700;background:#181C26}
-body.L summary{background:#FAFBFC}
-summary::-webkit-details-marker{display:none}
-summary::after{content:'\25BC';margin-left:auto;font-size:12px;color:#5A6275;transition:transform .2s}
-details[open] summary::after{transform:rotate(180deg)}
-details[open] summary{border-bottom:1px solid #1E2233}
-body.L details[open] summary{border-color:#E5E7EB}
+.ex{border:1px solid #2A4060;border-radius:12px;padding:14px 16px;margin-bottom:12px;background:#141720}body.L .ex{background:#FFF;border-color:#BFDBFE}
+.ex h2{font-size:12px;font-weight:700;color:#5B9BF0;letter-spacing:.05em;text-transform:uppercase;margin-bottom:8px}body.L .ex h2{color:#2563EB}
+.ex p{font-size:13px;line-height:1.6;color:#9CA3B4}body.L .ex p{color:#4B5563}
+.st{display:flex;gap:8px;margin-bottom:12px;overflow-x:auto}.si{flex:0 0 auto;padding:10px 14px;border-radius:10px;border:1px solid #1E2233;font-size:11px;font-weight:600;white-space:nowrap;background:#141720}body.L .si{background:#FFF;border-color:#E5E7EB}
+details.sec{border:1px solid #1E2233;border-radius:12px;margin-bottom:10px;overflow:hidden;background:#141720;scroll-margin-top:105px}body.L details.sec{background:#FFF;border-color:#E5E7EB}
+details.sec>summary{padding:14px 16px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px;font-size:15px;font-weight:700;background:#181C26}body.L details.sec>summary{background:#FAFBFC}
+details.sec>summary::-webkit-details-marker{display:none}details.sec>summary::after{content:'\25BC';margin-left:auto;font-size:12px;color:#5A6275;transition:transform .2s}
+details.sec[open]>summary::after{transform:rotate(180deg)}details.sec[open]>summary{border-bottom:1px solid #1E2233}body.L details.sec[open]>summary{border-color:#E5E7EB}
 .sm{font-size:11px;color:#5A6275;font-weight:400;margin-left:4px}
-.it{padding:12px 16px;border-bottom:1px solid #1E2233}
-body.L .it{border-color:#F0F1F3}
-.it:last-child{border-bottom:none}
+details.it{border-bottom:1px solid #1E2233;background:transparent;border-radius:0;margin:0}body.L details.it{border-color:#F0F1F3}details.it:last-child{border-bottom:none}
+details.it>summary{padding:12px 16px;cursor:pointer;list-style:none;display:block;background:transparent}details.it>summary::-webkit-details-marker{display:none}
+details.it[open]{background:#181C26}body.L details.it[open]{background:#F9FAFB}details.it[open]>summary{border-bottom:1px solid #1E2233}body.L details.it[open]>summary{border-color:#F0F1F3}
 .bh,.bm,.bl{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.08em;padding:2px 8px;border-radius:4px;line-height:16px;margin-bottom:6px}
-.bh{background:rgba(239,68,68,.12);color:#F87171;border:1px solid rgba(239,68,68,.25)}
-.bm{background:rgba(245,158,11,.12);color:#FBBF24;border:1px solid rgba(245,158,11,.25)}
-.bl{background:rgba(34,197,94,.1);color:#4ADE80;border:1px solid rgba(34,197,94,.2)}
-body.L .bh{background:rgba(239,68,68,.08);color:#DC2626;border-color:rgba(239,68,68,.2)}
-body.L .bm{background:rgba(245,158,11,.08);color:#D97706;border-color:rgba(245,158,11,.2)}
-body.L .bl{background:rgba(34,197,94,.06);color:#16A34A;border-color:rgba(34,197,94,.15)}
-.it h4{font-size:14px;font-weight:600;margin-bottom:4px}
-.it p{font-size:13px;line-height:1.5;color:#9CA3B4}
-body.L .it p{color:#4B5563}
+.bh{background:rgba(239,68,68,.12);color:#F87171;border:1px solid rgba(239,68,68,.25)}.bm{background:rgba(245,158,11,.12);color:#FBBF24;border:1px solid rgba(245,158,11,.25)}.bl{background:rgba(34,197,94,.1);color:#4ADE80;border:1px solid rgba(34,197,94,.2)}
+body.L .bh{background:rgba(239,68,68,.08);color:#DC2626;border-color:rgba(239,68,68,.2)}body.L .bm{background:rgba(245,158,11,.08);color:#D97706;border-color:rgba(245,158,11,.2)}body.L .bl{background:rgba(34,197,94,.06);color:#16A34A;border-color:rgba(34,197,94,.15)}
+details.it h4{font-size:14px;font-weight:600;margin-bottom:4px}details.it .su{font-size:13px;line-height:1.5;color:#9CA3B4}body.L details.it .su{color:#4B5563}
+.det{padding:12px 16px;font-size:13px;line-height:1.65;color:#9CA3B4}body.L .det{color:#4B5563}.det a{color:#5B9BF0;text-decoration:none;font-size:12px;font-weight:600;display:inline-block;margin-top:8px}body.L .det a{color:#2563EB}
 .ft{text-align:center;padding:20px;color:#5A6275;font-size:11px;line-height:1.6}
-.ptr{text-align:center;color:#5B9BF0;font-size:12px;font-weight:600;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:6px;height:0;transition:height .2s}
-body.L .ptr{color:#2563EB}
-@keyframes spin{to{transform:rotate(360deg)}}
-.ptr .sp{display:inline-block;animation:spin .8s linear infinite}
-.bn{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-top:1px solid #1E2233;display:flex;justify-content:space-around;padding:6px 12px;padding-bottom:max(env(safe-area-inset-bottom,6px),6px);z-index:100;background:rgba(12,14,18,.92)}
-body.L .bn{background:rgba(255,255,255,.92);border-color:#E5E7EB}
-.nb{background:none;border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 4px}
-.nb em{font-size:16px;font-style:normal}
-.nb b{font-size:8px;font-weight:600;color:#5A6275;display:block}
-body.L .nb b{color:#9CA3AF}
-</style>
-</head>
-<body>
+.bn{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-top:1px solid #1E2233;display:flex;justify-content:space-around;padding:6px 12px;padding-bottom:max(env(safe-area-inset-bottom,6px),6px);z-index:100;background:rgba(12,14,18,.92)}body.L .bn{background:rgba(255,255,255,.92);border-color:#E5E7EB}
+.nb{background:none;border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px 4px}.nb em{font-size:16px;font-style:normal}.nb b{font-size:8px;font-weight:600;color:#5A6275;display:block}body.L .nb b{color:#9CA3AF}
+</style></head><body>
 <div class="w">
-<div class="hd"><div><h1>TAG <span>BRIEF</span></h1><div class="dt">Monday, March 31, 2026</div></div><button class="tb" onclick="document.body.classList.toggle('L');localStorage.setItem('tl',document.body.classList.contains('L')?'1':'0');document.getElementById('tc').content=document.body.classList.contains('L')?'#F4F5F7':'#0C0E12'" id="thm">&#9789;</button></div>
-
-<div class="tk"><div class="tki">
-<span><span class="tg">PKM</span><i>Pikachu Illustrator</i><b>$16.5M</b><em class="up">&#9650;</em></span>
-<span><span class="tg">OP</span><i>Luffy OP13-118</i><b>$8,566</b><em class="up">&#9650;61%</em></span>
-<span><span class="tg">PKM</span><i>Umbreon ex SIR</i><b>$1,195</b><em class="up">&#9650;8%</em></span>
-<span><span class="tg">OP</span><i>Sabo OP13-120</i><b>$4,750</b><em class="up">&#9650;45%</em></span>
-<span><span class="tg">MTG</span><i>Gaia Cradle</i><b>$1,574</b><em class="up">&#9650;18%</em></span>
-<span><span class="tg">MTG</span><i>Firestorm</i><b>$60</b><em class="up">&#9650;300%</em></span>
-<span><span class="tg">Sports</span><i>1952 Mantle</i><b>$53K</b><em class="up">Stable</em></span>
-<span><span class="tg">F1</span><i>Antonelli 1/1</i><b>$51K</b><em class="up">&#9650;NEW</em></span>
-<span><span class="tg">MTG</span><i>Bloodletter</i><b>$21</b><em class="dn">&#9660;40%</em></span>
-<span><span class="tg">OP</span><i>Luffy Vol.20</i><b>$1.2K+</b><em class="up">&#9650;119%</em></span>
-<span><span class="tg">PKM</span><i>Mega Dragonite</i><b>$394</b><em class="up">&#9650;12%</em></span>
-<span><span class="tg">PKM</span><i>Pikachu Illustrator</i><b>$16.5M</b><em class="up">&#9650;</em></span>
-<span><span class="tg">OP</span><i>Luffy OP13-118</i><b>$8,566</b><em class="up">&#9650;61%</em></span>
-<span><span class="tg">MTG</span><i>Gaia Cradle</i><b>$1,574</b><em class="up">&#9650;18%</em></span>
-</div></div>
-
+<div class="hd"><div><h1>TAG <span>BRIEF</span></h1><div class="dt">Monday, March 31, 2026</div></div><button class="tb" onclick="document.body.classList.toggle('L');localStorage.setItem('tl',document.body.classList.contains('L')?'1':'0');document.getElementById('tc').content=document.body.classList.contains('L')?'#F4F5F7':'#0C0E12'">&#9789;</button></div>
+<div class="tk"><div class="tki"><span><span class="tg">PKM</span><i>Pikachu Illustrator</i><b>$16.5M</b><em class="up">&#9650;</em></span><span><span class="tg">OP</span><i>Luffy OP13-118</i><b>$8,566</b><em class="up">&#9650;61%</em></span><span><span class="tg">PKM</span><i>Umbreon ex SIR</i><b>$1,195</b><em class="up">&#9650;8%</em></span><span><span class="tg">OP</span><i>Sabo OP13-120</i><b>$4,750</b><em class="up">&#9650;45%</em></span><span><span class="tg">MTG</span><i>Gaia Cradle</i><b>$1,574</b><em class="up">&#9650;18%</em></span><span><span class="tg">MTG</span><i>Firestorm</i><b>$60</b><em class="up">&#9650;300%</em></span><span><span class="tg">Sports</span><i>1952 Mantle</i><b>$53K</b><em class="up">Stable</em></span><span><span class="tg">F1</span><i>Antonelli 1/1</i><b>$51K</b><em class="up">&#9650;</em></span><span><span class="tg">OP</span><i>Luffy Vol.20</i><b>$1.2K+</b><em class="up">&#9650;119%</em></span><span><span class="tg">MTG</span><i>Bloodletter</i><b>$21</b><em class="dn">&#9660;40%</em></span><span><span class="tg">PKM</span><i>Pikachu Illustrator</i><b>$16.5M</b><em class="up">&#9650;</em></span><span><span class="tg">OP</span><i>Luffy OP13-118</i><b>$8,566</b><em class="up">&#9650;61%</em></span></div></div>
 <div class="ptr" id="ptr"></div>
-
 <div class="p">
 <div class="ex"><h2>&#127919; Executive Summary</h2><p>The FTC antitrust investigation into Collectors Holdings (80%+ market control) creates TAG's biggest strategic window in years. One Piece TCG is exploding (+119% six-month growth, Luffy now PSA Top 12 Most Graded) alongside Pokemon Perfect Order launch. AI agents hit tipping point: 75% of businesses plan deployment by year-end with 40-60% efficiency gains.</p></div>
+<div class="st"><div class="si" style="color:#F87171">&#128308; 15 High</div><div class="si" style="color:#5B9BF0">&#128202; 50 Items</div><div class="si" style="color:#9CA3B4">8 Sections</div></div>
 
-<div class="st">
-<div class="si" style="color:#F87171">&#128308; 14 High Priority</div>
-<div class="si" style="color:#5B9BF0">&#128202; 47 Total Items</div>
-<div class="si" style="color:#9CA3B4">8 Sections</div>
-</div>
-
-<details open id="s-tag"><summary>&#128300; TAG Company Intel<span class="sm">4 items</span></summary>
-<div class="it"><span class="bh">HIGH</span><h4>FTC Antitrust Investigation &#8212; TAG as Key Independent</h4><p>Rep. Pat Ryan demands FTC investigate Collectors Holdings. PSA+SGC+Beckett = 80%+ of volume. TAG and CGC are the last significant independents. Five investigation areas: monopolization, serial acquisitions, regulatory evasion, SGC marginalization, competition erosion.</p></div>
-<div class="it"><span class="bh">HIGH</span><h4>$6.6B Market Forecast Highlights TAG Tech</h4><p>TCG authentication $2.24B to $6.6B by 2033. SGC: NFC chips (41K scans/day). PSA: FeaturePrint (62 micron). Beckett: Keyence (960 slabs/hr). TAG DIG reports, 1000-point scoring, and photometric imaging remain uniquely differentiated.</p></div>
-<div class="it"><span class="bm">MED</span><h4>TAG Submission Volume Growing</h4><p>Misprint.com: TAG submission volume grown significantly. Slabs appearing frequently in marketplace listings. 1000-point precision called competitive advantage over PSA whole numbers.</p></div>
-<div class="it"><span class="bl">LOW</span><h4>Expanded Eligibility &#8212; JP/CN Pokemon, One Piece, TAG V</h4><p>English/Japanese/Chinese Pokemon, One Piece, MTG, Yu-Gi-Oh, Weiss Schwarz. TAG V auth-only for sketch cards. LCS partnership program active.</p></div>
+<details class="sec" open id="s-tag"><summary>&#128300; TAG Company Intel<span class="sm">7</span></summary>
+<details class="it"><summary><span class="bh">HIGH</span><h4>FTC Antitrust &#8212; TAG as Key Independent</h4><div class="su">Rep. Pat Ryan demands FTC investigate Collectors Holdings. PSA+SGC+Beckett = 80%+ volume. TAG and CGC last significant independents.</div></summary><div class="det">Five investigation areas: monopolization, serial acquisitions, regulatory evasion, SGC marginalization, competition erosion. Nov 2025: PSA 1.66M cards; TAG+Beckett+SGC 448K combined. Vertical integration creates self-dealing.<a href="https://patryan.house.gov/media/press-releases/congressman-pat-ryan-demands-ftc-investigation-collectors-holdings-attempt" target="_blank">&#8594; Congressman Ryan Press Release</a></div></details>
+<details class="it"><summary><span class="bh">HIGH</span><h4>$6.6B Market Forecast Highlights TAG</h4><div class="su">TCG auth market $2.24B to $6.6B by 2033 (13% CAGR). Tech differentiation anchors competition. TAG DIG reports uniquely differentiated.</div></summary><div class="det">SGC: NFC (41K scans/day). PSA: FeaturePrint (62 micron). Beckett: Keyence (960 slabs/hr). TAG photometric imaging and 1000-point scoring remain distinct.<a href="https://www.globenewswire.com/news-release/2026/01/20/3221585/0/en/Trading-Card-Game-Authentication-Services-Market-Analysis-and-Market-Entry-Strategies-2025-2033-Astute-Analytica.html" target="_blank">&#8594; Astute Analytica</a></div></details>
+<details class="it"><summary><span class="bh">HIGH</span><h4>PSA Price Hikes Create TAG Window</h4><div class="su">PSA raised 5 tiers: Value Bulk $24.99 (95 days), Regular $79.99. TCG Bulk eliminated. TAG $14/card bulk significantly undercuts.</div></summary><div class="det">PSA 90K cards/day but 25-32% hikes plus extended turnarounds. Collectors furious. TAG captures disaffected bulk and mid-tier &#8212; the largest volume segment.<a href="https://athlonsports.com/collectibles/psa-grading-price-increases-february-2026-what-collectors-need-to-know" target="_blank">&#8594; Athlon Sports</a></div></details>
+<details class="it"><summary><span class="bh">HIGH</span><h4>TAG Perception: 'Story of 2025-2026'</h4><div class="su">Misprint: TAG volume grown significantly, slabs in marketplace listings. 1000-point precision called competitive advantage over PSA.</div></summary><div class="det">A year ago Reddit was dismissive. Now TAG precision is a selling point. Gaps: slab fragility perception, premium-only TAG Score, resale trail.<a href="https://www.misprint.com/posts/psa-vs-tag-vs-cgc-vs-bgs-2026" target="_blank">&#8594; Misprint.com</a></div></details>
+<details class="it"><summary><span class="bm">MED</span><h4>Competitor Tech: Beckett, PSA, SGC Automation</h4><div class="su">Beckett doubled throughput 960/hr. PSA FeaturePrint 62-micron. SGC NFC 41K scans/day. Industry turnaround median 12 days.</div></summary><div class="det">Beckett Keyence lifted margin $8/order, cut labor 3.4 to 1.6 min/card. TAG must benchmark and leapfrog.<a href="https://www.globenewswire.com/news-release/2026/01/20/3221585/0/en/Trading-Card-Game-Authentication-Services-Market-Analysis-and-Market-Entry-Strategies-2025-2033-Astute-Analytica.html" target="_blank">&#8594; Astute Analytica</a></div></details>
+<details class="it"><summary><span class="bm">MED</span><h4>DIG Reports Winning Praise From Skeptics</h4><div class="su">Forum: 'Only thing 4th tier is current adoption. These guys are the real deal.' 800% zoom, Card Vision, DINGS breakdown praised.</div></summary><div class="det">Criticism: AI detecting invisible flaws too strict. Software engineers want verification methodology. TAG review coupon generating testimonials.<a href="https://forums.collectors.com/discussion/1094475/tried-tag-grading" target="_blank">&#8594; Collectors Universe Forums</a></div></details>
+<details class="it"><summary><span class="bl">LOW</span><h4>Expanded: JP/CN Pokemon, OP, TAG V</h4><div class="su">English/Japanese/Chinese Pokemon, One Piece, MTG, YGO, Weiss Schwarz. TAG V auth-only. LCS program active.</div></summary><div class="det">No crossover grading. Patents envision coins, comics, memorabilia expansion.<a href="https://help.taggrading.com/en/articles/6712887-what-can-i-grade-with-tag" target="_blank">&#8594; TAG Help Center</a></div></details>
 </details>
 
-<details id="s-comm"><summary>&#128172; Community &#38; Sentiment<span class="sm">5 items</span></summary>
-<div class="it"><span class="bh">HIGH</span><h4>PSA Price Hike Rage &#8212; Collectors Seeking Alternatives</h4><p>PSA raised 5 tiers Feb 2026: Value Bulk $24.99 (95 days), Regular $79.99. TCG Bulk eliminated. TAG $14/card bulk is a clear opportunity. PSA grades 90K/day but hiked 25-32%.</p></div>
-<div class="it"><span class="bh">HIGH</span><h4>TAG Called &#8216;The Story of 2025-2026 in Grading&#8217;</h4><p>Major reviews report dramatic perception shift. DIG Reports praised: 800% zoom, Card Vision, DINGS breakdown. Forum: These guys are the real deal.</p></div>
-<div class="it"><span class="bm">MED</span><h4>One Piece Community Surging &#8212; Counterfeit Risk = Demand</h4><p>Manga rares exceed $1K graded. Counterfeit risks with 20-50% weekly swings. Card Ladder: +61% (3mo), +119% (6mo). Luffy Top 12 PSA Most Graded.</p></div>
-<div class="it"><span class="bm">MED</span><h4>BGS Confused, SGC Gutted, CGC Rising</h4><p>BGS owned by Collectors alongside PSA. SGC marginalized. CGC Pristine 10 trading at/above PSA 10. TAG should position between CGC premium and budget.</p></div>
-<div class="it"><span class="bl">LOW</span><h4>TAG Missing From OP Grading Guides</h4><p>TCG Protectors 2026 OP guide only covers PSA/BGS/CGC. Massive gap for content and influencer partnerships.</p></div>
+<details class="sec" id="s-comm"><summary>&#128172; Community<span class="sm">5</span></summary>
+<details class="it"><summary><span class="bh">HIGH</span><h4>Collector Anger Driving Alternative Search</h4><div class="su">Forums show collectors switching from PSA/SGC. Collectors Holdings controlling grading + pricing + marketplace = unprecedented conflicts.</div></summary><div class="det">Cardhound: 'For vintage, no way to avoid Collectors brands.' TAG well-positioned to capture frustration with pricing and transparency.<a href="https://cardhoundvintage.com/collectors-psa-sgc-and-beckett-a-deep-dive-into-antitrust-allegations/" target="_blank">&#8594; Cardhound Vintage</a></div></details>
+<details class="it"><summary><span class="bh">HIGH</span><h4>One Piece Community &#8212; Counterfeit = Demand</h4><div class="su">Manga rares $1K+ graded. Counterfeit risks, 20-50% weekly swings. Card Ladder +119% 6mo. Luffy Top 12 PSA Most Graded.</div></summary><div class="det">r/OnePieceTCG, Discord, X are hubs. TAG grades OP &#8212; massive volume opportunity. Target with counterfeit-detection messaging.<a href="https://www.si.com/collectibles/one-piece-and-monkey-d-luffy-cards-enter-pokemon-s-tcg-territory" target="_blank">&#8594; SI.com</a></div></details>
+<details class="it"><summary><span class="bm">MED</span><h4>BGS Confused, SGC Gutted, CGC Rising</h4><div class="su">BGS owned with PSA. SGC marginalized. CGC Pristine 10 at/above PSA 10 for some cards.</div></summary><div class="det">TAG should position between CGC premium and budget space. Ryan letter questions SGC marginalization.<a href="https://sportscollectorsdigest.com/collectors-concerned-over-beckett-acquisition-legal-experts-raise-monopoly-question-after-purchase-by-psa" target="_blank">&#8594; Sports Collectors Digest</a></div></details>
+<details class="it"><summary><span class="bm">MED</span><h4>TAG Missing From OP Grading Guides</h4><div class="su">TCG Protectors OP guide only covers PSA/BGS/CGC. Massive gap for TAG content + influencer partnerships.</div></summary><div class="det">OP community is younger, tech-forward, less PSA-locked. TAG brand aligns.<a href="https://tcgprotectors.com/blogs/one-piece-collectors-corner/to-grade-or-not-to-grade-one-piece-tcg" target="_blank">&#8594; TCG Protectors</a></div></details>
+<details class="it"><summary><span class="bl">LOW</span><h4>TAG Price: Clear Value at Every Tier</h4><div class="su">Bulk $14 vs PSA $24.99. No value upcharges. For cards under $150, math favors TAG.</div></summary><div class="det">Zero-upcharge model differentiates from PSA declared-value pricing.<a href="https://graderschoice.com/tag-grading-review/" target="_blank">&#8594; Graders Choice</a></div></details>
 </details>
 
-<details id="s-tcg"><summary>&#128200; TCG Industry &#38; Market<span class="sm">6 items</span></summary>
-<div class="it"><span class="bh">HIGH</span><h4>One Piece TCG: Fastest-Growing &#8212; 119% Growth</h4><p>Card Ladder: +61% (3mo), +119% (6mo). Outsold Yu-Gi-Oh. Luffy OP13-118 at $8,566. Sealed boxes $120 to $700+. Gem rates 80-90%. Counterfeit risk creates auth demand.</p></div>
-<div class="it"><span class="bh">HIGH</span><h4>Pokemon Perfect Order + $16.5M Pikachu Record</h4><p>Perfect Order (Mar 27): 120+ cards. Standard rotation Apr 11. Pikachu Illustrator $16.5M. Chase: Mega Dragonite SIR $394, Mega Gengar SIR $493. Chaos Rising May 22.</p></div>
-<div class="it"><span class="bh">HIGH</span><h4>MTG Premodern Driving 300%+ Spikes</h4><p>Gaia Cradle $1,574. Firestorm $14 to $60. Sprout Swarm $0.75 to $8. Beckett Hot/Cold today: Sprout Swarm spiking, Bloodletter -40%. Reserved List + format = sustained moves.</p></div>
-<div class="it"><span class="bm">MED</span><h4>Notable Sales: Mantle $53K, F1 $51K, Luffy $315K</h4><p>Goldin: 1952 Mantle PSA 1 $53,284. F1 Antonelli 1/1 $51,240. CGC Pristine 10 Luffy $315,600. Motorsports crossover growing.</p></div>
-<div class="it"><span class="bm">MED</span><h4>Emerging: Lorcana+Pixar, Riftbound, F1, YGO 25th</h4><p>Lorcana Wilds Unknown (May) adds Pixar. Riftbound 4 sets. TCG market $8B to $11.5B by 2031. F1 generating 5-figure sales.</p></div>
-<div class="it"><span class="bl">LOW</span><h4>Sports: Basketball/Football +13%</h4><p>$15-20B market. Counterfeit memorabilia approx 50%. F1 crossover = emerging high-value category.</p></div>
+<details class="sec" id="s-tcg"><summary>&#128200; TCG Market<span class="sm">6</span></summary>
+<details class="it"><summary><span class="bh">HIGH</span><h4>One Piece: Fastest-Growing &#8212; 119%</h4><div class="su">Card Ladder +61% (3mo), +119% (6mo). Outsold YGO. Luffy OP13-118 $8,566. Sealed $120 to $700+. Gem rates 80-90%.</div></summary><div class="det">Netflix, manga conclusion, celebrity buzz. Bandai supply discipline. Counterfeit risk = auth demand.<a href="https://www.si.com/collectibles/one-piece-and-monkey-d-luffy-cards-enter-pokemon-s-tcg-territory" target="_blank">&#8594; SI.com</a></div></details>
+<details class="it"><summary><span class="bh">HIGH</span><h4>Pokemon Perfect Order + $16.5M Pikachu</h4><div class="su">Perfect Order (Mar 27): 120+ cards. Rotation Apr 11. Pikachu Illustrator $16.5M Goldin. Chaos Rising May 22.</div></summary><div class="det">Mega Dragonite SIR $394 (PSA 10: $700-1K). Sealed spiking 150-250%/yr. Dual submission wave.<a href="https://www.pokemon.com/us/pokemon-news/mega-evolution-perfect-order-is-now-available-in-pokemon-trading-card-game-live" target="_blank">&#8594; Pokemon.com</a></div></details>
+<details class="it"><summary><span class="bh">HIGH</span><h4>MTG Premodern: 300%+ Spikes</h4><div class="su">Gaia Cradle $1,574. Firestorm $14 to $60. Sprout Swarm +967%. Beckett Hot/Cold today: Bloodletter -40%.</div></summary><div class="det">Reserved List + growing format = sustained moves. Vintage MTG = high-value grading.<a href="https://www.beckett.com/news/magic-the-gathering-hot-cold-list-for-the-week-of-march-30-2026/" target="_blank">&#8594; Beckett</a></div></details>
+<details class="it"><summary><span class="bm">MED</span><h4>Sales: Mantle $53K, F1 $51K, Luffy $315K</h4><div class="su">Goldin: Mantle PSA 1 $53,284. F1 Antonelli 1/1 $51,240. CGC Luffy Pristine 10 $315,600.</div></summary><div class="det">Motorsports crossover growing. Auction calendar dense through April.<a href="https://www.auctionreport.com/vintage-1952-topps-mantle-leads-goldin-march-5-2026-weekly-auction-results/" target="_blank">&#8594; Auction Report</a></div></details>
+<details class="it"><summary><span class="bm">MED</span><h4>Emerging: Lorcana, Riftbound, F1, YGO 25th</h4><div class="su">Lorcana adds Pixar (May). Riftbound 4 sets. TCG market $8B to $11.5B by 2031. F1 5-figure sales.</div></summary><div class="det">Monitor which emerging TCGs generate grading demand.<a href="https://hallofcards.app/blog-posts/best-tcgs-to-collect-2026-complete-ranking-new-collectors" target="_blank">&#8594; Hall of Cards</a></div></details>
+<details class="it"><summary><span class="bl">LOW</span><h4>Sports: BB/FB +13%, 50% Counterfeit</h4><div class="su">$15-20B market. Counterfeit memorabilia ~50%. Antitrust framed around sports.</div></summary><div class="det">F1 crossover = emerging high-value category.<a href="https://www.auctionreport.com/goldin-march-12-2026-weekly-auction-results/" target="_blank">&#8594; Auction Report</a></div></details>
 </details>
 
-<details id="s-reg"><summary>&#9878;&#65039; Regulatory &#38; Legal<span class="sm">3 items</span></summary>
-<div class="it"><span class="bh">HIGH</span><h4>FTC Investigation Likely</h4><p>Five prongs targeting Collectors Holdings. Legal experts: 80%+ = potentially illegal monopoly. TAG named as remaining independent in congressional documents.</p></div>
-<div class="it"><span class="bm">MED</span><h4>Colorado AI Act &#8212; TAG ML May Need Compliance</h4><p>First US AI risk assessment law. EU AI Act Aug 2026. TAG ML grading assigns economic value. Benefits TAG: transparency = trust moat.</p></div>
-<div class="it"><span class="bl">LOW</span><h4>EU Loot Box Rules Could Boost Grading</h4><p>If packs classified as gambling, singles collecting increases &#8212; net positive for grading.</p></div>
+<details class="sec" id="s-reg"><summary>&#9878;&#65039; Legal<span class="sm">3</span></summary>
+<details class="it"><summary><span class="bh">HIGH</span><h4>FTC Investigation Likely</h4><div class="su">Five prongs. 80%+ = potentially illegal. TAG named as independent in congressional docs.</div></summary><div class="det">Lesko: 'Above 75% shows market share.' Harris (ex-FTC): 'Definitely a monopoly.' Clayton Act: illegal to buy competitor to shut down.<a href="https://sportscollectorsdigest.com/collectors-concerned-over-beckett-acquisition-legal-experts-raise-monopoly-question-after-purchase-by-psa" target="_blank">&#8594; Sports Collectors Digest</a></div></details>
+<details class="it"><summary><span class="bm">MED</span><h4>Colorado AI Act &#8212; TAG ML Compliance</h4><div class="su">First US AI risk law. EU AI Act Aug 2026. TAG ML = high-risk. Transparency = trust moat.</div></summary><div class="det">Publish AI whitepaper before regulation forces it.<a href="https://www.thinkbrg.com/thinkset/consumer-protection-and-compliance-in-2026-a-new-era-of-accountability/" target="_blank">&#8594; ThinkSet</a></div></details>
+<details class="it"><summary><span class="bl">LOW</span><h4>EU Loot Box = More Grading</h4><div class="su">If packs = gambling, singles collecting rises. Net positive for grading.</div></summary><div class="det">Individual cards more valuable when packs restricted.<a href="https://billsarchive.com/articles/grading-industry-monopolisation.html" target="_blank">&#8594; Bill's Archive</a></div></details>
 </details>
 
-<details id="s-ai"><summary>&#129302; AI &#38; Tech Implementation<span class="sm">7 items</span></summary>
-<div class="it"><span class="bh">HIGH</span><h4>75% Plan AI Agents by EOY 2026</h4><p>Deloitte: 75% plan agentic AI. 40-60% efficiency gains. McKinsey: $2.6-4.4T value. TAG: customer service (40+ hrs/mo saved), QA automation, competitive intel.</p></div>
-<div class="it"><span class="bh">HIGH</span><h4>Multi-Agent Architecture for TAG</h4><p>Oracle AI Agent Studio: workflow orchestration, contextual memory, ROI dashboards. TAG: imaging + defect detection + population + comms agents coordinated by orchestration layer.</p></div>
-<div class="it"><span class="bh">HIGH</span><h4>AI Counterfeit Detection &#8212; TAG Imaging = Foundation</h4><p>30% retail fraud AI-generated. PSA FeaturePrint 62 micron. TAG photometric imaging extends to counterfeit slab detection as software layer. CGC: 210K blockchain reports.</p></div>
-<div class="it"><span class="bh">HIGH</span><h4>Eric Siu: Claude Code Replaced $50K Team</h4><p>Full go-to-market in under an hour. 132 SEO pages in 24 hrs. OpenClaw booking meetings on autopilot. TAG: build internal marketing skills repo.</p></div>
-<div class="it"><span class="bm">MED</span><h4>Greg Isenberg: Orchestration = Highest-Value</h4><p>Autoresearch + OpenClaw. ACP framework: Audience, Community, Product. Mechanical tasks = AI strength. TAG per-card pricing aligned.</p></div>
-<div class="it"><span class="bm">MED</span><h4>Hyperautomation: 40% Labor Cut</h4><p>TAG roadmap: Wk1 Claude Code intel. Wk2 submission automation. Wk4 AI QA. Mo2 mobile pre-scan. Mo3 multi-agent pipeline.</p></div>
-<div class="it"><span class="bl">LOW</span><h4>AI Governance: Human-in-Loop Critical</h4><p>Combine machine precision + human judgment. Position between fully-automated and fully-manual.</p></div>
+<details class="sec" id="s-ai"><summary>&#129302; AI &#38; Tech<span class="sm">7</span></summary>
+<details class="it"><summary><span class="bh">HIGH</span><h4>75% Plan AI Agents by EOY 2026</h4><div class="su">Deloitte 75%. Gartner 40% apps. 40-60% gains. McKinsey $2.6-4.4T value.</div></summary><div class="det">TAG: customer service (40+ hrs saved), QA automation, competitive intel, submission tracking.<a href="https://joget.com/ai-agent-adoption-in-2026-what-the-analysts-data-shows/" target="_blank">&#8594; Gartner / IDC / Deloitte</a></div></details>
+<details class="it"><summary><span class="bh">HIGH</span><h4>Multi-Agent Architecture for TAG</h4><div class="su">Oracle AI Agent Studio: orchestration, contextual memory, ROI dashboards. 63K+ experts trained.</div></summary><div class="det">TAG: imaging + defect + population + comms agents coordinated by orchestration layer.<a href="https://www.oracle.com/news/announcement/oracle-expands-ai-agent-studio-for-fusion-applications-with-agentic-applications-builder-2026-03-24/" target="_blank">&#8594; Oracle</a></div></details>
+<details class="it"><summary><span class="bh">HIGH</span><h4>AI Counterfeit &#8212; TAG Imaging = Foundation</h4><div class="su">30% fraud AI-generated. PSA FeaturePrint 62 micron. 50% memorabilia counterfeit. TCGplayer fraud -65%.</div></summary><div class="det">TAG photometric extends to counterfeit detection as software layer. CGC 210K blockchain reports. SGC NFC 41K scans.<a href="https://blogs.nvidia.com/blog/ai-fraud-detection-rapids-triton-tensorrt-nemo/" target="_blank">&#8594; NVIDIA</a></div></details>
+<details class="it"><summary><span class="bh">HIGH</span><h4>Eric Siu: Claude Code = $50K Team</h4><div class="su">Full GTM in an hour. 132 SEO pages in 24hrs. OpenClaw booking meetings. 'Top 0.1% if you start now.'</div></summary><div class="det">GitHub Marketing Skills repo. Built CRM scanner in under an hour. TAG: build internal skills repo.<a href="https://www.listennotes.com/podcasts/leveling-up-with-eric-siu-eric-siu-IOm9gr7f_yb/" target="_blank">&#8594; Leveling Up Podcast</a></div></details>
+<details class="it"><summary><span class="bm">MED</span><h4>Greg Isenberg: Orchestration = Value</h4><div class="su">Autoresearch + OpenClaw. ACP: Audience, Community, Product. Per-task pricing.</div></summary><div class="det">TAG per-card pricing aligned. IdeaBrowser scans communities for validated problems.<a href="https://podcast.app/the-startup-ideas-podcast-p6007233" target="_blank">&#8594; Startup Ideas Pod</a></div></details>
+<details class="it"><summary><span class="bm">MED</span><h4>Hyperautomation: 40% Labor, 80% Time Cut</h4><div class="su">McKinsey $3T contribution. 75% pros using agents. No-code enables rapid deployment.</div></summary><div class="det">TAG: Wk1 Claude Code intel. Wk2 submission auto. Wk4 QA. Mo2 mobile scan. Mo3 pipeline.<a href="https://www.venture7.com/blog/ai-solutions-modern-business-transformation-2026/" target="_blank">&#8594; McKinsey / Venture7</a></div></details>
+<details class="it"><summary><span class="bl">LOW</span><h4>AI Governance: Human-in-Loop</h4><div class="su">Machine precision + human judgment. Position between full-auto and full-manual.</div></summary><div class="det">Publish methodology for credibility. McKinsey: governance roadmap before scaling.<a href="https://www.raconteur.net/technology/autonomous-ai-agents-2026-the-new-rules-for-business-governance" target="_blank">&#8594; Raconteur</a></div></details>
 </details>
 
-<details id="s-cr"><summary>&#127916; AI Creators Playbook<span class="sm">5 items</span></summary>
-<div class="it"><span class="bh">HIGH</span><h4>Alex Finn: ClawdBot + Claude Life OS</h4><p>VCA 230+ members. Creator Buddy $300K/yr. Research agents, daily briefs. TAG: prototype TAG Life OS for competitor monitoring and leadership briefing.</p></div>
-<div class="it"><span class="bh">HIGH</span><h4>Matt Wolfe: FutureTools + NVIDIA GTC</h4><p>FutureTools.io = definitive AI news. GTC 2026: VP Agentic AI. Claude subs doubled. Invested: Canva, Replit, Factory.</p></div>
-<div class="it"><span class="bm">MED</span><h4>Dan Martell: Buyback Loop + SaaS Scaling</h4><p>1-3-1 Rule. SaaS Academy $3M to $10M+. Martell Ventures: AI-driven software. TAG fits thesis.</p></div>
-<div class="it"><span class="bm">MED</span><h4>Peter Yang: Claude Code Team Interviews</h4><p>Cat Wu (PM), Meaghan Choi (Design). Figma-to-production. Claude Code team = workflow benchmark.</p></div>
-<div class="it"><span class="bl">LOW</span><h4>Signal Watch: 11 More Creators</h4><p>Mikey No Code, Duncan Rogoff, AI Growth Lab, Julian Goldie, BoxminingAI, Chase AI, Clearmud, Build In Public, Next New Thing, AI Hu Knows, AI Chris Lee.</p></div>
+<details class="sec" id="s-cr"><summary>&#127916; Creators<span class="sm">5</span></summary>
+<details class="it"><summary><span class="bh">HIGH</span><h4>Alex Finn: ClawdBot + Claude Life</h4><div class="su">VCA 230+. Creator Buddy $300K/yr. Research agents, daily briefs, brain dumps via sub-agents.</div></summary><div class="det">TAG: prototype TAG Life OS. Stack: Next.js + Supabase + Stripe + Vercel.<a href="https://www.alexfinn.ai/p/how-to-build-your-first-app-with-877" target="_blank">&#8594; Alex Finn</a></div></details>
+<details class="it"><summary><span class="bh">HIGH</span><h4>Matt Wolfe: FutureTools + GTC</h4><div class="su">Definitive AI news. GTC VP Agentic AI. Claude subs 2x. Invested: Canva, Replit, Factory.</div></summary><div class="det">Monitor for auth/CV tools. Portfolio signals AI tooling direction.<a href="https://futuretools.io/news" target="_blank">&#8594; FutureTools.io</a></div></details>
+<details class="it"><summary><span class="bm">MED</span><h4>Dan Martell: Buyback + SaaS</h4><div class="su">1-3-1 Rule. SaaS Academy $3M to $10M+. Martell Ventures AI focus. TAG fits thesis.</div></summary><div class="det">Consider TAG Academy for brand loyalty + submission funnel.<a href="https://www.danmartell.com/" target="_blank">&#8594; Dan Martell</a></div></details>
+<details class="it"><summary><span class="bm">MED</span><h4>Peter Yang: Claude Code Team</h4><div class="su">Cat Wu (PM), Meaghan Choi (Design). AI-native workflows. Workflow benchmark.</div></summary><div class="det">Figma-to-production eliminates handoff. Study for internal dev.<a href="https://creatoreconomy.so/p/full-tutorial-build-an-ai-life-copilot-with-claude-code-alex-finn" target="_blank">&#8594; Creator Economy</a></div></details>
+<details class="it"><summary><span class="bl">LOW</span><h4>Signal: 11 More Creators Tracked</h4><div class="su">Mikey No Code, Duncan Rogoff, AI Growth Lab, Julian Goldie, BoxminingAI, Chase AI + 5 more.</div></summary><div class="det">Monthly. Duncan (automation), Julian (SEO), BoxminingAI (blockchain).<a href="https://www.youtube.com/@AlexFinnOfficial" target="_blank">&#8594; YouTube Monitoring</a></div></details>
 </details>
 
-<details id="s-bd"><summary>&#129309; Partnerships &#38; BD<span class="sm">3 items</span></summary>
-<div class="it"><span class="bh">HIGH</span><h4>CGC Expanding: Famicom, Pristine 10</h4><p>CGC grading retro games, McDonalds, home video. Pristine 10 at/above PSA 10. TAG patents envision expansion.</p></div>
-<div class="it"><span class="bm">MED</span><h4>One Piece Partnership = Volume</h4><p>OP guides only cover PSA/BGS/CGC. TAG not mentioned. Younger, tech-forward community. Counterfeit risk = TAG value prop.</p></div>
-<div class="it"><span class="bl">LOW</span><h4>Marketplace + LCS + Anniversary</h4><p>Goldin, TCGPlayer, eBay need auth partners. TAG Verified badge. LCS program. Pokemon 30th. F1 demographic.</p></div>
+<details class="sec" id="s-bd"><summary>&#129309; Partners<span class="sm">3</span></summary>
+<details class="it"><summary><span class="bh">HIGH</span><h4>CGC: Famicom, Pristine 10 Rising</h4><div class="su">CGC grading retro games, McDonalds, video. Pristine 10 at/above PSA 10. Diversification outpacing TAG.</div></summary><div class="det">TAG patents envision expansion. Adjacent: coins, stamps, memorabilia.<a href="https://www.cgcgrading.com/en-US" target="_blank">&#8594; CGC</a></div></details>
+<details class="it"><summary><span class="bm">MED</span><h4>One Piece Partnership = Volume</h4><div class="su">OP guides skip TAG. Younger community. Counterfeit risk = TAG value prop.</div></summary><div class="det">Create content, partner influencers, sponsor tournaments.<a href="https://tcgprotectors.com/blogs/one-piece-collectors-corner/to-grade-or-not-to-grade-one-piece-tcg" target="_blank">&#8594; TCG Protectors</a></div></details>
+<details class="it"><summary><span class="bl">LOW</span><h4>Marketplace + LCS + Anniversary</h4><div class="su">Goldin, TCGPlayer, eBay need partners. TAG Verified badge. LCS program. Pokemon 30th. F1.</div></summary><div class="det">Each LCS = distribution channel. Marketplace = volume multiplier.<a href="https://taggrading.com/pages/pricing" target="_blank">&#8594; TAG Grading</a></div></details>
 </details>
 
-<details open id="s-act"><summary>&#9889; Daily Action Items<span class="sm">5 items</span></summary>
-<div class="it"><span class="bh">HIGH</span><h4>TODAY: Draft Antitrust Positioning</h4><p>Public statement, media points, social content. Position TAG as tech-forward independent. The window is now.</p></div>
-<div class="it"><span class="bh">HIGH</span><h4>TODAY: One Piece Community Outreach</h4><p>Create OP grading content. Engage r/OnePieceTCG. Address manga rare counterfeit concerns with TAG imaging.</p></div>
-<div class="it"><span class="bh">HIGH</span><h4>TODAY: Claude Code Pilot &#8212; 30 Min</h4><p>Create project, plan mode, build competitive intel agent. Siu built marketing system in under an hour.</p></div>
-<div class="it"><span class="bm">MED</span><h4>THIS WEEK: Tech Benchmark</h4><p>TAG vs FeaturePrint. NFC eval. Throughput vs Beckett 960/hr. Patent leapfrog.</p></div>
-<div class="it"><span class="bl">LOW</span><h4>LONG-TERM: Auth-as-a-Service</h4><p>TAG imaging beyond cards. $6.6B headroom. AI whitepaper. Multi-agent architecture. Mobile scanner.</p></div>
+<details class="sec" open id="s-act"><summary>&#9889; Actions<span class="sm">5</span></summary>
+<details class="it"><summary><span class="bh">HIGH</span><h4>TODAY: Antitrust Positioning</h4><div class="su">Public statement, media points, social. Position TAG as tech-forward independent. Window is now.</div></summary><div class="det">(1) Draft statement. (2) Trade press. (3) Marketing audit. (4) Social contrast. (5) Media outreach.<a href="https://patryan.house.gov/media/press-releases/congressman-pat-ryan-demands-ftc-investigation-collectors-holdings-attempt" target="_blank">&#8594; Ryan Press Release</a></div></details>
+<details class="it"><summary><span class="bh">HIGH</span><h4>TODAY: One Piece Outreach</h4><div class="su">Create OP grading content. Engage r/OnePieceTCG. Address counterfeit with TAG imaging.</div></summary><div class="det">Before/after defect imaging content. Partner 2-3 influencers. Fastest-growing TCG.<a href="https://www.si.com/collectibles/one-piece-and-monkey-d-luffy-cards-enter-pokemon-s-tcg-territory" target="_blank">&#8594; SI.com</a></div></details>
+<details class="it"><summary><span class="bh">HIGH</span><h4>TODAY: Claude Code Pilot &#8212; 30 Min</h4><div class="su">Create project, plan mode, build competitive intel agent. Siu built system in under an hour.</div></summary><div class="det">(1) tag-intel folder. (2) Plan mode. (3) Slash command. (4) Iterate to daily email.<a href="https://www.alexfinn.ai/p/how-to-build-your-first-app-with-877" target="_blank">&#8594; Finn + Siu Method</a></div></details>
+<details class="it"><summary><span class="bm">MED</span><h4>WEEK: Tech Benchmark</h4><div class="su">TAG vs FeaturePrint. NFC eval. Throughput vs Beckett. Patent leapfrog.</div></summary><div class="det">Matrix: accuracy, throughput, verification, AI, durability, mobile UX.<a href="https://www.globenewswire.com/news-release/2026/01/20/3221585/0/en/Trading-Card-Game-Authentication-Services-Market-Analysis-and-Market-Entry-Strategies-2025-2033-Astute-Analytica.html" target="_blank">&#8594; Astute Analytica</a></div></details>
+<details class="it"><summary><span class="bl">LOW</span><h4>LONG: Auth-as-a-Service + AI Paper</h4><div class="su">Beyond cards. $6.6B headroom. Whitepaper. Multi-agent. Mobile scanner.</div></summary><div class="det">(1) Adjacent verticals. (2) Blockchain/NFC. (3) B2B licensing. (4) Scanner. (5) Paper. (6) Pipeline.<a href="https://taggrading.com/" target="_blank">&#8594; TAG Grading</a></div></details>
 </details>
 
-<div class="ft"><strong>TAG DAILY INTELLIGENCE v3</strong><br>8 sections &#183; 47 items &#183; Live web research<br><span style="opacity:.6">Built for TAG Grading leadership</span></div>
-</div>
-</div>
-
+<div class="ft"><strong>TAG DAILY INTELLIGENCE v4</strong><br>8 sections &#183; 50 items &#183; Live research<br><span style="opacity:.6">TAG leadership &#183; Mar 31, 2026</span></div>
+</div></div>
 <div class="bn">
 <button class="nb" onclick="document.getElementById('s-tag').scrollIntoView({behavior:'smooth'})"><em>&#128300;</em><b>TAG</b></button>
 <button class="nb" onclick="document.getElementById('s-comm').scrollIntoView({behavior:'smooth'})"><em>&#128172;</em><b>Community</b></button>
@@ -192,38 +133,11 @@ body.L .nb b{color:#9CA3AF}
 <button class="nb" onclick="document.getElementById('s-bd').scrollIntoView({behavior:'smooth'})"><em>&#129309;</em><b>Partners</b></button>
 <button class="nb" onclick="document.getElementById('s-act').scrollIntoView({behavior:'smooth'})"><em>&#9889;</em><b>Actions</b></button>
 </div>
-
 <script>
 if(localStorage.getItem("tl")==="1"){document.body.classList.add("L");document.getElementById("tc").content="#F4F5F7"}
-var sy=0,active=false,pd=0,ptr=document.getElementById("ptr");
-ptr.style.height="0";ptr.style.padding="0";ptr.innerHTML="";
-document.addEventListener("touchstart",function(e){
-  if(window.scrollY<1){sy=e.touches[0].clientY;active=true}else{active=false}
-},{passive:true});
-document.addEventListener("touchmove",function(e){
-  if(!active)return;
-  var d=e.touches[0].clientY-sy;
-  if(d>10&&window.scrollY<1){
-    e.preventDefault();
-    pd=Math.min(d*0.4,80);
-    ptr.style.height=Math.floor(pd/3)+"px";
-    ptr.style.padding=pd>10?"8px 0":"0";
-    if(pd>55){ptr.innerHTML='<span class="sp">&#8635;</span> Release to refresh'}
-    else{ptr.innerHTML='<span style="display:inline-block;transform:rotate('+Math.floor(pd*4)+'deg)">&#8635;</span> Pull down...'}
-  }
-},{passive:false});
-document.addEventListener("touchend",function(){
-  if(!active){return}
-  if(pd>55){
-    ptr.innerHTML='<span class="sp">&#8635;</span> Refreshing...';
-    ptr.style.height="30px";ptr.style.padding="8px 0";
-    setTimeout(function(){window.location.reload()},600);
-  }else{
-    ptr.style.height="0";ptr.style.padding="0";ptr.innerHTML="";
-  }
-  active=false;pd=0;
-});
+var sy=0,active=false,pd=0,ptr=document.getElementById("ptr");ptr.style.height="0";ptr.innerHTML="";
+document.addEventListener("touchstart",function(e){if(window.scrollY<1){sy=e.touches[0].clientY;active=true}else{active=false}},{passive:true});
+document.addEventListener("touchmove",function(e){if(!active)return;var d=e.touches[0].clientY-sy;if(d>10&&window.scrollY<1){e.preventDefault();pd=Math.min(d*0.4,80);ptr.style.height=Math.floor(pd/3)+"px";ptr.style.padding=pd>10?"8px 0":"0";if(pd>55){ptr.innerHTML='<span class="sp">&#8635;</span> Release to refresh'}else{ptr.innerHTML='<span style="display:inline-block;transform:rotate('+Math.floor(pd*4)+'deg)">&#8635;</span> Pull down...'}}},{passive:false});
+document.addEventListener("touchend",function(){if(!active)return;if(pd>55){ptr.innerHTML='<span class="sp">&#8635;</span> Refreshing...';ptr.style.height="30px";ptr.style.padding="8px 0";setTimeout(function(){window.location.reload()},600)}else{ptr.style.height="0";ptr.style.padding="0";ptr.innerHTML=""}active=false;pd=0});
 </script>
-
-</body>
-</html>
+</body></html>
