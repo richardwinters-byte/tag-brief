@@ -72,7 +72,7 @@ body.L .bl{background:rgba(34,197,94,.06);color:#16A34A;border-color:rgba(34,197
 .it p{font-size:13px;line-height:1.5;color:#9CA3B4}
 body.L .it p{color:#4B5563}
 .ft{text-align:center;padding:20px;color:#5A6275;font-size:11px;line-height:1.6}
-.ptr{text-align:center;color:#5B9BF0;font-size:12px;font-weight:600;padding:0;overflow:hidden;transition:padding .2s;display:flex;align-items:center;justify-content:center;gap:6px}
+.ptr{text-align:center;color:#5B9BF0;font-size:12px;font-weight:600;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:6px;height:0;transition:height .2s}
 body.L .ptr{color:#2563EB}
 @keyframes spin{to{transform:rotate(360deg)}}
 .ptr .sp{display:inline-block;animation:spin .8s linear infinite}
@@ -195,10 +195,34 @@ body.L .nb b{color:#9CA3AF}
 
 <script>
 if(localStorage.getItem("tl")==="1"){document.body.classList.add("L");document.getElementById("tc").content="#F4F5F7"}
-var sy=0,pulling=false,pd=0,ptr=document.getElementById("ptr");
-document.addEventListener("touchstart",function(e){if(window.scrollY===0){sy=e.touches[0].clientY;pulling=true}});
-document.addEventListener("touchmove",function(e){if(!pulling)return;var d=e.touches[0].clientY-sy;if(d>0&&window.scrollY===0){pd=Math.min(d*.4,80);ptr.style.padding=Math.floor(pd/4)+"px 0";if(pd>60){ptr.innerHTML='<span class="sp">&#8635;</span> Release to refresh'}else{ptr.innerHTML='<span style="transform:rotate('+Math.floor(pd*4)+'deg);display:inline-block">&#8635;</span> Pull to refresh'}}});
-document.addEventListener("touchend",function(){if(pd>60){ptr.innerHTML='<span class="sp">&#8635;</span> Refreshing...';ptr.style.padding="12px 0";setTimeout(function(){location.reload()},800)}else{ptr.style.padding="0";ptr.innerHTML=""}pulling=false;pd=0});
+var sy=0,active=false,pd=0,ptr=document.getElementById("ptr");
+ptr.style.height="0";ptr.style.padding="0";ptr.innerHTML="";
+document.addEventListener("touchstart",function(e){
+  if(window.scrollY<1){sy=e.touches[0].clientY;active=true}else{active=false}
+},{passive:true});
+document.addEventListener("touchmove",function(e){
+  if(!active)return;
+  var d=e.touches[0].clientY-sy;
+  if(d>10&&window.scrollY<1){
+    e.preventDefault();
+    pd=Math.min(d*0.4,80);
+    ptr.style.height=Math.floor(pd/3)+"px";
+    ptr.style.padding=pd>10?"8px 0":"0";
+    if(pd>55){ptr.innerHTML='<span class="sp">&#8635;</span> Release to refresh'}
+    else{ptr.innerHTML='<span style="display:inline-block;transform:rotate('+Math.floor(pd*4)+'deg)">&#8635;</span> Pull down...'}
+  }
+},{passive:false});
+document.addEventListener("touchend",function(){
+  if(!active){return}
+  if(pd>55){
+    ptr.innerHTML='<span class="sp">&#8635;</span> Refreshing...';
+    ptr.style.height="30px";ptr.style.padding="8px 0";
+    setTimeout(function(){window.location.reload()},600);
+  }else{
+    ptr.style.height="0";ptr.style.padding="0";ptr.innerHTML="";
+  }
+  active=false;pd=0;
+});
 </script>
 
 </body>
